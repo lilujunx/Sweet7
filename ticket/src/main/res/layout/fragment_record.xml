@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.example.ticket.ui.fragment.MineFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/lv_record_fragment"
+        android:layout_height="match_parent">
+
+    </ListView>
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/tv_record_fragment"
+        android:gravity="center"
+        android:text="_(:зゝ∠)_暂无购票信息"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

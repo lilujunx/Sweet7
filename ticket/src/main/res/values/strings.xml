@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">昊客运</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="reserve">预定</string>
+    <string name="dj">单价:</string>
+    <string name="sj">时间:</string>
+    <string name="yp">余票:</string>
+    <string name="zp">总票:</string>
+    <string name="dz">东站</string>
+    <string name="dzz">东站 至</string>
+</resources>

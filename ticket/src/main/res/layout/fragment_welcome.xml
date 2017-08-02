@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.example.ticket.ui.fragment.WelcomeFragment">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_welcome_fragement"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+    <Button
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:id="@+id/bt_go_welcome_fragment"
+        android:layout_width="match_parent"
+        android:text="立即体验"
+        android:textSize="30sp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:textColor="#fff"
+        android:background="@drawable/bt_go"
+        android:layout_height="50dp"/>
+</RelativeLayout>

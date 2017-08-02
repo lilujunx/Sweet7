@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ticket.ui.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/container_activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_MainActivity"></FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_MainActivity"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#e9e3e3"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RadioGroup
+            android:id="@+id/rg_activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <!--rb_reserve_MainActivity-->
+            <!--rb_select_MainActivity-->
+            <!--rb_mine_MainActivity-->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+            <RadioButton
+
+                android:id="@+id/rb_reserve_MainActivity"
+                android:layout_width="30dp"
+                android:button="@null"
+                android:background="@drawable/rb_home"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+            <RadioButton
+                android:id="@+id/rb_select_MainActivity"
+                android:layout_width="30dp"
+                android:button="@null"
+                android:background="@drawable/rb_record"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+            <RadioButton
+                android:id="@+id/rb_mine_MainActivity"
+                android:layout_width="30dp"
+                android:button="@null"
+                android:background="@drawable/rb_mine"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+        </RadioGroup>
+        <LinearLayout
+            android:layout_below="@+id/rg_activity_main"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="首页"
+                android:clickable="true"
+                android:id="@+id/tv_rb_reserve_MainActivity"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="购票记录"
+                android:clickable="true"
+                android:id="@+id/tv_rb_record_MainActivity"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="30dp"
+                android:text="我的"
+                android:clickable="true"
+                android:id="@+id/tv_rb_mine_MainActivity"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

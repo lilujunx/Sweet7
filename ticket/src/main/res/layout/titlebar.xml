@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:background="@drawable/title_tab_normal"
+              android:paddingTop="20dp"
+              android:layout_height="80dp">
+    <TextView
+        android:id="@id/title_left"
+        android:clickable="true"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:background="@drawable/common_title_bar_back_white_normal"
+        android:layout_width="50dp"
+        android:layout_height="40dp"/>
+    <TextView
+        android:id="@id/title_center"
+        android:text="xxxx"
+        android:textSize="20sp"
+
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@id/title_right"
+
+        android:clickable="true"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="修改"
+        android:layout_width="50dp"
+        android:layout_height="40dp"/>
+</LinearLayout>

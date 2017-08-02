@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ticket_detail"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.ticket.ui.activity.TicketDetailActivity">
+
+    <RelativeLayout
+        android:layout_below="@+id/ll_main_TicketDetailActivity"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_addpassenger_TicketDetailActivity"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:text="添加乘客"
+            android:drawableLeft="@drawable/search_discover"
+            android:layout_height="50dp"/>
+        <ListView
+            android:layout_below="@+id/tv_addpassenger_TicketDetailActivity"
+            android:id="@+id/lv_addPassenger_TicketDetailActivity"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/bt_submit_TicketDetailActivity"
+            android:layout_height="wrap_content">
+
+        </ListView>
+        <Button
+            android:id="@+id/bt_submit_TicketDetailActivity"
+
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:text="确认购票"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:background="@drawable/shape_button"
+            android:layout_height="50dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_main_TicketDetailActivity"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgv_type_TicketDetailActivity"
+                android:layout_width="match_parent"
+                android:src="@mipmap/ic_launcher"
+                android:layout_height="150dp"/>
+            <TextView
+                android:id="@+id/tv_type_TicketDetailActivity"
+                android:text="大型高一"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:paddingLeft="10dp"
+                    android:gravity="center|left"
+                    android:text="终点："
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/tv_end_TicketDetailActivity"
+                    android:layout_weight="1"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:text="xxxx"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:paddingLeft="10dp"
+                    android:gravity="center|left"
+                    android:text="时间："
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/tv_time_TicketDetailActivity"
+                    android:layout_weight="1"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:text="17:50"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:paddingLeft="10dp"
+                    android:gravity="center|left"
+                    android:text="票价："
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/tv_price_TicketDetailActivity"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:text="15"
+                    android:textColor="#f00"
+                    android:layout_height="match_parent"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:paddingLeft="10dp"
+                    android:gravity="center|left"
+                    android:text="余票："
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/tv_surplus_TicketDetailActivity"
+                    android:layout_weight="1"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:text="xxx"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

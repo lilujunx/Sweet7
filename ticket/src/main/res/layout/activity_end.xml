@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_end"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ticket.ui.activity.EndActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp">
+
+        <LinearLayout
+            android:id="@+id/ll_EndActivity"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:paddingTop="20dp"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_current_EndActivity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/title_tab_normal"
+                android:gravity="center"
+                android:text="所有"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_hot_EndActivity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/title_tab_normal"
+                android:gravity="center"
+                android:text="热门"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_all_EndActivity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/title_tab_normal"
+                android:gravity="center"
+                android:text="最近"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_translate_activity_main"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@+id/ll_EndActivity"
+            android:background="@drawable/title_tab_selected"
+            android:gravity="center"
+            android:text="常用"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_EndActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

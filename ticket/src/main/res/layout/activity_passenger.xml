@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_passenger"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ticket.ui.activity.PassengerActivity">
+    <ListView
+        android:layout_above="@+id/ll_PassengerActivity"
+        android:layout_marginTop="5dp"
+        android:id="@+id/lv_PassengerActivity"
+        android:background="#fff"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </ListView>
+    <LinearLayout
+        android:id="@+id/ll_PassengerActivity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+      >
+
+        <Button
+            android:id="@+id/bt_submit_PassengerActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#20aeda"
+            android:text="提交"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+</RelativeLayout>
